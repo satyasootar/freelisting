@@ -2,6 +2,8 @@
 
 FreeListing is a production-ready, high-fidelity project listing interface built with React and Tailwind CSS. It aggregates 6 distinct mini-applications powered by [FreeAPI](https://freeapi.app/), featuring a modern Bento Grid dashboard and a unified Vercel-inspired design system.
 
+https://github.com/user-attachments/assets/a6a4e429-27b0-468e-9fd7-6432553261e9
+
 ## 🚀 Features
 
 - **Unified Dashboard**: A clean, responsive Bento Grid landing page with quick-access project cards.
@@ -12,7 +14,7 @@ FreeListing is a production-ready, high-fidelity project listing interface built
   - **Cats**: Comprehensive breed profiles featuring 12 attributes (stats), 10 behavioral traits, and external resource links.
   - **Meals**: Recipe browser with category and origin metadata.
   - **Users**: High-fidelity personal profile cards with contact, location, and registration details.
-- **Modern UI/UX**:
+  - **Modern UI/UX**:
   - **Tailwind CSS v4**: Built with the latest Tailwind features for maximum styling efficiency.
   - **Dark Mode**: Seamless toggle between light and dark themes with system preference persistence.
   - **Aesthetics**: Vercel/shadcn style with dotted borders, glassmorphism, and smooth micro-animations.
