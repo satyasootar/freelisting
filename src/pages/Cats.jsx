@@ -65,7 +65,7 @@ export default function Cats() {
       {error && <ErrorMsg message={error} onRetry={load} />}
       {!loading && !error && cat && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          {/* Left: Image + Description (sticky) */}
+
           <div className="md:sticky md:top-20 flex flex-col gap-4">
             <div className="border border-dashed border-border-dot rounded-xl overflow-hidden bg-surface-hover">
               <img src={cat.image} alt={cat.name} width={500} className="w-full h-auto block" />
@@ -75,9 +75,8 @@ export default function Cats() {
             </p>
           </div>
 
-          {/* Right: All info */}
           <div className="flex flex-col gap-5">
-            {/* Header */}
+
             <div className="flex items-baseline gap-3 flex-wrap">
               <h2 className="text-2xl font-bold tracking-tight">{cat.name}</h2>
               <span className="text-xs font-medium text-muted px-2.5 py-0.5 border border-dashed border-border-dot rounded-full">
@@ -89,7 +88,6 @@ export default function Cats() {
               <span className="text-xs text-dim italic">Also known as: {cat.alt_names}</span>
             )}
 
-            {/* Temperament */}
             <div className={sectionClass}>
               <h3 className={sectionTitle}>Temperament</h3>
               <div className="flex flex-wrap gap-1.5">
@@ -99,7 +97,6 @@ export default function Cats() {
               </div>
             </div>
 
-            {/* Stat bars */}
             <div className={sectionClass}>
               <h3 className={sectionTitle}>Attributes</h3>
               <div className="flex flex-col gap-2">
@@ -117,7 +114,6 @@ export default function Cats() {
               </div>
             </div>
 
-            {/* Boolean traits */}
             <div className={sectionClass}>
               <h3 className={sectionTitle}>Traits</h3>
               <div className="flex flex-wrap gap-1.5">
@@ -137,7 +133,6 @@ export default function Cats() {
               </div>
             </div>
 
-            {/* Details */}
             <div className={sectionClass}>
               <h3 className={sectionTitle}>Details</h3>
               <div className="flex flex-col gap-1.5">
@@ -155,7 +150,6 @@ export default function Cats() {
               </div>
             </div>
 
-            {/* Links */}
             <div className={sectionClass}>
               <h3 className={sectionTitle}>Learn More</h3>
               <div className="flex flex-wrap gap-2">

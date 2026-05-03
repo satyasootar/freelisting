@@ -18,7 +18,6 @@ export default function Home() {
         <ThemeToggle />
       </div>
 
-      {/* Hero */}
       <section className="text-center mt-2 mb-10">
         <p className="inline-block text-xs font-medium tracking-widest uppercase text-muted border border-dashed border-border-dot rounded-full px-3.5 py-1 mb-5">
           Powered by FreeAPI
@@ -31,7 +30,6 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Bento Grid */}
       <section
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px w-full max-w-[920px] border border-dashed border-border-dot rounded-xl overflow-hidden bg-border-dot"
         aria-label="Project cards"

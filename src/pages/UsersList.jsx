@@ -44,7 +44,7 @@ export default function UsersList() {
       {!loading && !error && user && (
         <div className="flex flex-col items-center gap-6 pt-4">
           <div className="max-w-md w-full border border-dashed border-border-dot rounded-xl bg-surface-card overflow-hidden">
-            {/* Header */}
+
             <div className="flex flex-col items-center gap-2 px-6 pt-8 pb-6 border-b border-dashed border-border-dot">
               <div className="w-[104px] h-[104px] rounded-full border-2 border-dashed border-blue-500 p-0.5 flex items-center justify-center">
                 <img
@@ -61,7 +61,6 @@ export default function UsersList() {
               <span className="text-sm font-medium text-blue-500">@{user.login?.username}</span>
             </div>
 
-            {/* Contact */}
             <div className={sectionClass}>
               <h3 className={sectionTitle}>Contact</h3>
               <div className="flex flex-col gap-1.5">
@@ -84,7 +83,6 @@ export default function UsersList() {
               </div>
             </div>
 
-            {/* Location */}
             <div className={sectionClass}>
               <h3 className={sectionTitle}>Location</h3>
               <div className="flex flex-col gap-1.5">
@@ -105,7 +103,6 @@ export default function UsersList() {
               </div>
             </div>
 
-            {/* Personal */}
             <div className={sectionClass}>
               <h3 className={sectionTitle}>Personal</h3>
               <div className="flex flex-wrap gap-1.5">
