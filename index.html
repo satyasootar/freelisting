@@ -4,16 +4,44 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="FreeListing — 6 mini-apps in 1 interface. Browse products, quotes, jokes, cats, meals & users powered by FreeAPI." />
+    
+    <title>FreeListing — The Ultimate FreeAPI Explorer</title>
+    <meta name="description" content="Discover products, quotes, jokes, cats, meals, and users in one sleek, high-performance interface. Built with React and powered by FreeAPI." />
+    <meta name="keywords" content="FreeAPI, Listing, React, Vite, TailwindCSS, API Explorer" />
+    <meta name="author" content="Antigravity" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://freelisting.vercel.app/" />
+    <meta property="og:title" content="FreeListing — The Ultimate FreeAPI Explorer" />
+    <meta property="og:description" content="Discover products, quotes, jokes, cats, meals, and users in one sleek, high-performance interface." />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://freelisting.vercel.app/" />
+    <meta property="twitter:title" content="FreeListing — The Ultimate FreeAPI Explorer" />
+    <meta property="twitter:description" content="Discover products, quotes, jokes, cats, meals, and users in one sleek, high-performance interface." />
+    <meta property="twitter:image" content="/og-image.png" />
+
     <meta name="theme-color" content="#09090b" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://api.freeapi.app" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <title>FreeListing — FreeAPI Explorer</title>
+
+    <script>
+      (function() {
+        try {
+          var theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          if (theme === 'dark') document.documentElement.classList.add('dark');
+        } catch (e) {}
+      })();
+    </script>
   </head>
-  <body>
+  <body class="bg-surface text-foreground antialiased selection:bg-indigo-500/30">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
-</html>
+</html>
