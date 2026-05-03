@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ── Theme tokens as Tailwind colors ── */
+:root {
+  --surface: #fafafa;
+  --surface-card: #ffffff;
+  --surface-hover: #f4f4f5;
+  --border-dot: #d4d4d8;
+  --foreground: #09090b;
+  --muted: #71717a;
+  --dim: #a1a1aa;
+  --ring-focus: #18181b;
+}
+
+.dark {
+  --surface: #09090b;
+  --surface-card: #18181b;
+  --surface-hover: #27272a;
+  --border-dot: #3f3f46;
+  --foreground: #fafafa;
+  --muted: #a1a1aa;
+  --dim: #71717a;
+  --ring-focus: #fafafa;
+}
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --color-surface: var(--surface);
+  --color-surface-card: var(--surface-card);
+  --color-surface-hover: var(--surface-hover);
+  --color-border-dot: var(--border-dot);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-dim: var(--dim);
+  --color-ring-focus: var(--ring-focus);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background-color: var(--surface);
+    color: var(--foreground);
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring-focus);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
